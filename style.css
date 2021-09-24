@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+body{
+	font-family:'Poppins', sans-serif;
+	margin-left:5%;
+	margin-right:5%;
+	background-image:url(images/wallpapers/coverBackground.png);
+	background-size:cover;
+	color:white;
+}
+
+img:hover{
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.67);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.67);
+	box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.67);
+}
+
+/* Anchors */
+a{
+	color:white;
+}
+
+a:hover{
+	color:white;
+}
+
+a:visited{
+	color:white;
+}
+
+/* Header */
+.mainHeader{
+	margin-top:40px;
+	text-align:center;
+}
+
+.mainHeaderLeft, .mainHeaderCenter, .mainHeaderRight{
+	height:40px;
+	line-height:40px;
+	float:left;
+	background:rgba(112,128,144,0.75);
+}
+
+.mainHeaderLeft, .mainHeaderRight{
+	width:33%;
+}
+
+.mainHeaderCenter{
+	width:34%;
+	font-size:24px;
+}
+
+/* Body */
+.mainBody{
+	margin-top:40px;
+	text-align:center;
+}
+
+.mainBodyLeft, .mainBodyRight, .mainBodyCenter{
+	float:left;
+}
+
+.mainBodyLeft, .mainBodyRight{
+	width:33%;
+}
+
+/* Body Center */
+.mainBodyCenter{
+	text-align:center;
+	width:34%;
+	height:284px;
+	background:rgba(112,128,144,0.75)
+}
+
+.mainBodyCenterContentLeft, .mainBodyCenterContentRight{
+	width:50%;
+	float:left;
+}
+
+/* Footer */
+.mainFooter{
+	margin-top:30px;
+	text-align:center;
+	width:100%;
+	float:left;
+	background:rgba(112,128,144,0.75);
+}
