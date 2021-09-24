@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 body{
+	margin:2.5%;
 	font-family:'Poppins', sans-serif;
-	margin-left:5%;
-	margin-right:5%;
-	background-image:url(images/wallpapers/coverBackground.png);
+	background-color:black;
 	background-size:cover;
 	color:white;
+}
+
+a{
+	text-decoration:none;
+	color:white;
+}
+
+a:hover{
+	text-shadow: 0 0 4px #ffffff;
 }
 
 img:hover{
@@ -18,73 +26,78 @@ img:hover{
 	box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.67);
 }
 
-/* Anchors */
-a{
-	color:white;
-}
-
-a:hover{
-	color:white;
-}
-
-a:visited{
-	color:white;
-}
-
 /* Header */
-.mainHeader{
-	margin-top:40px;
-	text-align:center;
+.header{
+	display:flex;
 }
 
-.mainHeaderLeft, .mainHeaderCenter, .mainHeaderRight{
-	height:40px;
-	line-height:40px;
-	float:left;
-	background:rgba(112,128,144,0.75);
+.headerLeft, .headerRight{
+	flex:1;
 }
 
-.mainHeaderLeft, .mainHeaderRight{
-	width:33%;
+.headerLeft{
+	padding-left:5%;
+	text-align:left;
 }
 
-.mainHeaderCenter{
-	width:34%;
-	font-size:24px;
+.headerRight{
+	padding-right:5%;
+	text-align:right;
+}
+
+/* Section Divider */
+.sectionDivider{
+	margin-top:0.625%;
+	border:1px solid white;
 }
 
 /* Body */
-.mainBody{
-	margin-top:40px;
+.body{
+	display:flex;
+	margin-top:0.625%;
+	margin-left:25%;
+	margin-right:25%;
+}
+
+.bodyLeft, .bodyRight{
 	text-align:center;
+	flex:1;
 }
 
-.mainBodyLeft, .mainBodyRight, .mainBodyCenter{
-	float:left;
+.bodyRightProjects{
+	display:flex;
 }
 
-.mainBodyLeft, .mainBodyRight{
-	width:33%;
-}
-
-/* Body Center */
-.mainBodyCenter{
+.bodyRightLeft, .bodyRightRight{
 	text-align:center;
-	width:34%;
-	height:284px;
-	background:rgba(112,128,144,0.75)
-}
-
-.mainBodyCenterContentLeft, .mainBodyCenterContentRight{
-	width:50%;
-	float:left;
+	flex:1;
 }
 
 /* Footer */
-.mainFooter{
-	margin-top:30px;
+.footer{
 	text-align:center;
-	width:100%;
-	float:left;
-	background:rgba(112,128,144,0.75);
+}
+
+.footerConnections{
+	margin-top:0.625%;
+}
+
+/* Tooltip */
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltipText {
+	position:absolute;
+	visibility:hidden;
+	text-align:center;
+	width:120px;
+	left:-45px;
+	bottom:-50%;
+	background-color:#000000;
+}
+
+.tooltip:hover .tooltipText {
+  visibility: visible;
 }

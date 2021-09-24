@@ -5,81 +5,95 @@
 		<title>Danny Nguyen</title>
 	</head>
 	<body>
-		<div class="mainHeader">
-			<div class="mainHeaderLeft">
-					<a href="index.html"><img src="images/icons/aboutIcon.png" title="About" alt="aboutIcon.png" width="42" height="42"></a>
+		<div class="header">
+			<div class="headerLeft">
+				 <a href="index.html">Danny Nguyen</a>
 			</div>
-			<div class="mainHeaderCenter">
-				Danny Nguyen
-			</div>
-			<div class="mainHeaderRight">
-					<a href="documents/resume.pdf" target="_blank"><img src="images/icons/resumeIcon.png" title="Resume" alt="resumeIcon.png" width="42" height="42"></a> 
-					<a href="https://github.com/ndanny09" target="_blank"><img src="images/icons/portfolioIcon.png" title="Portfolio" alt="portfolioIcon.png" width="42" height="42"></a>
+			<div class="headerRight">
+				<a href="documents/resume.pdf" target="_blank">Resume</a> &emsp;
+				<a href="https://github.com/ndanny09" target="_blank">Portfolio</a> &emsp; 
+				<a href="mailto:ndanny09@gmail.com" target="_blank">Contact</a>
 			</div>
 		</div>
-		<br>
-		<div class="mainBody">
-			<div class="mainBodyLeft">
-				<img src="images/icons/coverPortrait.png" alt="portrait" width="206" height="206"><br>
-				<a href="https://www.linkedin.com/in/ndanny09/" target="_blank"><img src="images/icons/linkedinIcon.png" title="ndanny09" alt="linkedinIcon.png" width="64" height="64"></a>
-				<a href="https://github.com/ndanny09" target="_blank"><img src="images/icons/githubIcon.png" title="ndanny09" alt="githubIcon.png" width="64" height="64"></a>
-				<a href="https://twitter.com/ndanny09" target="_blank"><img src="images/icons/twitterIcon.png" title="ndanny09" alt="twitterIcon.png" width="64" height="64"></a>
+		<div class="sectionDivider"></div>
+		<div class="body">
+			<div class="bodyLeft">
+				<img src="images/coverPortrait480x480.png" alt="coverPortrait480x480.png" width="128" height="128"><br>
+				<span class="tooltip">
+					<a href="https://www.linkedin.com/in/ndanny09/" target="_blank">
+					<img src="images/icons/linkedinIcon64x64.png" title="ndanny09" alt="linkedinIcon64x64.png" width="32" height="32"></a>
+					<span class="tooltipText">ndanny09</span>
+				</span>
+				<span class="tooltip">
+					<a href="https://github.com/ndanny09" target="_blank">
+					<img src="images/icons/githubIcon64x64.png" title="ndanny09" alt="githubIcon64x64.png" width="32" height="32"></a>
+					<span class="tooltipText">ndanny09</span>
+				</span>
+				<span class="tooltip">
+					<a href="https://twitter.com/ndanny09" target="_blank">
+					<img src="images/icons/twitterIcon64x64.png" title="ndanny09" alt="twitterIcon64x64.png" width="32" height="32"></a>
+					<span class="tooltipText">ndanny09</span>
+				</span>
 			</div>
-			<div class="mainBodyCenter">
+			<div class="bodyRight">
 				<b>What I'm Currently Working On</b>
-				<div class="mainBodyCenterContent">
-					<div class="mainBodyCenterContentLeft">
+				<div class="bodyRightProjects">
+					<div class="bodyRightLeft">
 						<ul>
-							<b>Programming</b><br>
+							<u>Programming</u><br>
 							<a href="projects/starfallen.txt" target="_blank" title="Starfallen">Starfallen</a><br>
 							<a href="projects/lucyferbot.txt" target="_blank" title="LucyferBot">LucyferBot</a>
 						</ul>
 					</div>
-					<div class="mainBodyCenterContentRight">
+					<div class="bodyRightRight">
 						<ul>
-							<b>Art</b><br>
-							<a href="projects/holofusions.txt" target="_blank" title="Holofusions">Holofusions</a>
+							<u>Art</u><br>
+							<a href="projects/holofusions.txt" target="_blank" title="HoloFusions">Holofusions</a>
 						</ul>
 					</div>
 				</div>
 			</div>
-			<div class="mainBodyRight">
-				<img src="images/icons/discordIcon.png" title="Bam#3531" alt="discordIcon.png" width="64" height="64">
-				<a href="https://steamcommunity.com/id/ItsBamB1" target="_blank"><img src="images/icons/steamIcon.png" title="ItsBamB1" alt="steamIcon.png" width="64" height="64"></a><br>
-				<img src="images/icons/battlenetIcon.png" title="Bam#11940" alt="battlenetIcon.png" width="64" height="64">
-				<img src="images/icons/xboxIcon.png" title="Bam6561" alt="xboxIcon.png" width="64" height="64"><br>
-				<a href="https://open.spotify.com/user/ndanny09" target="_blank"><img src="images/icons/spotifyIcon.png" title="ndanny09" alt="spotifyIcon.png" width="64" height="64"></a>
-				<a href="https://soundcloud.com/ndanny09" target="_blank"><img src="images/icons/soundcloudIcon.png" title="ndanny09" alt="soundcloudIcon.png" width="64" height="64"></a><br>
-				<a href="https://www.youtube.com/channel/UCNlTjwo_j6HLhWVxWCS_3qA" target="_blank"><img src="images/icons/youtubeIcon.png" title="Danny Nguyen" alt="youtubeIcon.png" width="64" height="64"></a>
-				<a href="https://www.twitch.tv/its_bamb1" target="_blank"><img src="images/icons/twitchIcon.png" title="its_bamb1" alt="twitchIcon.png" width="64" height="64"></a>
-			</div>
-			<div class="mainFooter">
-				Contact Me
-				<form name="contactForm" action="mailto:ndanny09@gmail.com" method="post" enctype="text/plain" onsubmit="return formSubmission()">
-					Name: <input type="text" name="Name" size="25"><span id="nameError" style="color:red;"></span><br>
-					E-mail: <input type="text" name="Email" size="25"><span id="emailError" style="color:red;"></span><br>
-					Comment: <textarea name="Comment" rows="5" cols="75"></textarea><br>
-					<input type="submit" value="Send"> <input type="reset" onclick="formReset()" value="Reset">
-				</form>
-				<script>
-					function formSubmission(){
-						let name = document.forms["contactForm"]["Name"].value;
-						if(name==""){
-							document.getElementById("nameError").innerHTML="Name cannot be empty.";
-						}
-						let email = document.forms["contactForm"]["Email"].value;
-						if(email==""){
-							document.getElementById("emailError").innerHTML="Email cannot be empty.";
-						}
-						if((email=="")||(name=="")){
-							return false;
-						}
-					}
-					function formReset(){
-						document.getElementById("nameError").innerHTML="";
-						document.getElementById("emailError").innerHTML="";
-					}
-				</script>
+		</div>
+		<div class="sectionDivider"></div>
+		<div class="footer">
+			<div class="footerConnections">
+				<span class="tooltip">
+					<img src="images/icons/discordIcon64x64.png" alt="discordIcon64x64.png" width="32" height="32">&ensp;
+					<span class="tooltipText">Bam#3531</span>
+				</span>
+				<span class="tooltip">
+					<a href="https://steamcommunity.com/id/ItsBamB1" target="_blank">
+					<img src="images/icons/steamIcon64x64.png" alt="steamIcon64x64.png" width="32" height="32"></a>&ensp;
+					<span class="tooltipText">ItsBamB1</span>
+				</span>
+				<span class="tooltip">
+					<img src="images/icons/battlenetIcon64x64.png" alt="battlenetIcon64x64.png" width="32" height="32">&ensp;
+					<span class="tooltipText">Bam#11940</span>
+				</span>
+				<span class="tooltip">
+					<img src="images/icons/xboxIcon64x64.png" alt="xboxIcon64x64.png" width="32" height="32">&ensp;
+					<span class="tooltipText">Bam6561</span>
+				</span>
+				<span class="tooltip">
+					<a href="https://open.spotify.com/user/ndanny09" target="_blank">
+					<img src="images/icons/spotifyIcon64x64.png" alt="spotifyIcon64x64.png" width="32" height="32"></a>&ensp;
+					<span class="tooltipText">ndanny09</span>
+				</span>
+				<span class="tooltip">
+					<a href="https://soundcloud.com/ndanny09" target="_blank">
+					<img src="images/icons/soundcloudIcon64x64.png" alt="soundcloudIcon64x64.png" width="32" height="32"></a>&ensp;
+					<span class="tooltipText">ndanny09</span>
+				</span>
+				<span class="tooltip">
+					<a href="https://www.youtube.com/channel/UCNlTjwo_j6HLhWVxWCS_3qA" target="_blank">
+					<img src="images/icons/youtubeIcon64x64.png" alt="youtubeIcon64x64.png" width="32" height="32"></a>&ensp;
+					<span class="tooltipText">Danny Nguyen</span>
+				</span>
+				<span class="tooltip">
+					<a href="https://www.twitch.tv/its_bamb1" target="_blank">
+					<img src="images/icons/twitchIcon64x64.png" alt="twitchIcon64x64.png" width="32" height="32"></a>
+					<span class="tooltipText">its_bamb1</span>
+				</span>
 			</div>
 		</div>
 	</body>
