@@ -8,15 +8,16 @@ body{
 	color:white;
 }
 
+/* Links */
 a{
 	text-decoration:none;
 	color:white;
 }
-
 a:hover{
 	text-shadow: 0 0 4px #ffffff;
 }
 
+/* Images */
 img:hover{
 	-webkit-border-radius: 100%;
 	-moz-border-radius: 100%;
@@ -27,20 +28,17 @@ img:hover{
 }
 
 /* Header */
-.header{
+.headerContainer{
 	display:flex;
 }
-
-.headerLeft, .headerRight{
+.headerBoxL, .headerBoxR{
 	flex:1;
 }
-
-.headerLeft{
+.headerBoxL{
 	padding-left:5%;
 	text-align:left;
 }
-
-.headerRight{
+.headerBoxR{
 	padding-right:5%;
 	text-align:right;
 }
@@ -52,43 +50,40 @@ img:hover{
 }
 
 /* Body */
-.body{
+.bodyMainContainer{
 	display:flex;
 	margin-top:0.625%;
 	margin-left:25%;
 	margin-right:25%;
 }
-
-.bodyLeft, .bodyRight{
+.bodyMainBox, .bodyCurrentProjectsBox, .bodyUsefulResourcesBox{
 	text-align:center;
 	flex:1;
 }
-
-.bodyRightProjects{
+.bodyCurrentProjectsContainer, .bodyUsefulResourcesContainer{
 	display:flex;
 }
-
-.bodyRightLeft, .bodyRightRight{
+.bodyUsefulResourcesContainer, .bodyUsefulResourcesHeader{
+	margin-top:0.625%;
+}
+.bodyUsefulResourcesHeader{
 	text-align:center;
-	flex:1;
 }
 
 /* Footer */
 .footer{
 	text-align:center;
 }
-
 .footerConnections{
 	margin-top:0.625%;
 }
 
 /* Tooltip */
-.tooltip {
+.tooltip{
 	position: relative;
 	display: inline-block;
 }
-
-.tooltipText {
+.tooltipText{
 	position:absolute;
 	visibility:hidden;
 	text-align:center;
@@ -97,7 +92,6 @@ img:hover{
 	bottom:-50%;
 	background-color:#000000;
 }
-
-.tooltip:hover .tooltipText {
+.tooltip:hover .tooltipText{
   visibility: visible;
 }
