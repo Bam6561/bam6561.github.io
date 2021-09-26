@@ -38,6 +38,9 @@ img:hover{
 	padding-left:5%;
 	text-align:left;
 }
+#headerBoxC{
+	text-align:center;
+}
 .headerBoxR{
 	padding-right:5%;
 	text-align:right;

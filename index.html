@@ -4,10 +4,12 @@
 		<link rel="stylesheet" href="style.css">
 		<title>Danny Nguyen</title>
 	</head>
-	<bodyMainContainer>
+	<body>
 		<div class="headerContainer">
 			<div class="headerBoxL">
 				 <a href="index.html">Danny Nguyen</a>
+			</div>
+			<div id="headerBoxC">
 			</div>
 			<div class="headerBoxR">
 				<a href="documents/resume.pdf" target="_blank">Resume</a> &emsp;
@@ -147,5 +149,32 @@
 				</span>
 			</div>
 		</div>
-	</bodyMainContainer>
+	</body>
 </html>
+
+<script type="text/javascript">
+	var today = new Date();
+	var day = today.getDay();
+	var month = today.getMonth();
+	var monthDay = today.getDate();
+	var year = today.getFullYear();
+	var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+	var days = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+	if(today.getHours()<10){
+		var hour = "0"+today.getHours();
+	} else {
+		var hour = today.getHours();
+	}
+	if(today.getMinutes()<10){
+		var minute = "0"+today.getMinutes();
+	} else {
+		var minute = today.getMinutes();
+	}
+	if(today.getSeconds()<10){
+		var second = "0"+today.Seconds();
+	} else {
+		var second = today.getSeconds();
+	}
+	var dateTime = days[day]+", "+months[month]+" "+monthDay+", "+year+" ["+hour+":"+minute+":"+second+"]";
+	document.getElementById("headerBoxC").innerHTML = dateTime;
+</script>
