@@ -59,17 +59,17 @@ img:hover{
 	margin-left:25%;
 	margin-right:25%;
 }
-.bodyMainBox, .bodyCurrentProjectsBox, .bodyUsefulResourcesBox{
+.bodyMainBox, .bodyCurrentProjectsBox, .bodyPersonalProjectsBox, .bodyUsefulResourcesBox{
 	text-align:center;
 	flex:1;
 }
-.bodyCurrentProjectsContainer, .bodyUsefulResourcesContainer{
+.bodyCurrentProjectsContainer, .bodyPersonalProjectsContainer, .bodyUsefulResourcesContainer{
 	display:flex;
 }
-.bodyUsefulResourcesContainer, .bodyUsefulResourcesHeader{
+.bodyPersonalProjectsContainer, .bodyPersonalProjectsHeader, .bodyUsefulResourcesContainer, .bodyUsefulResourcesHeader{
 	margin-top:0.625%;
 }
-.bodyUsefulResourcesHeader{
+.bodyPersonalProjectsHeader, .bodyUsefulResourcesHeader{
 	text-align:center;
 }
 
