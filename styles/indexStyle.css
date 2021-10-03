@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+body{
+	margin:2.5%;
+	font-family:'Poppins', sans-serif;
+	background-color:black;
+	background-size:cover;
+	color:white;
+}
+
+/* Links */
+a{
+	text-decoration:none;
+	color:white;
+}
+a:hover{
+	text-shadow: 0 0 4px #ffffff;
+}
+
+/* Images */
+img:hover{
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.67);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.67);
+	box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.67);
+}
+
+/* Header */
+.headerContainer{
+	display:flex;
+}
+.headerBoxL, .headerBoxR{
+	flex:1;
+}
+.headerBoxL{
+	padding-left:5%;
+	text-align:left;
+}
+#headerBoxC{
+	text-align:center;
+}
+.headerBoxR{
+	padding-right:5%;
+	text-align:right;
+}
+
+/* Section Divider */
+.sectionDivider{
+	margin-top:0.625%;
+	border:1px solid white;
+}
+
+/* Body */
+.bodyMainContainer{
+	display:flex;
+	margin-top:0.625%;
+	margin-left:25%;
+	margin-right:25%;
+}
+.bodyMainBox, .bodyCurrentProjectsBox, .bodyPersonalProjectsBox, .bodyUsefulResourcesBox{
+	text-align:center;
+	flex:1;
+}
+.bodyCurrentProjectsContainer, .bodyPersonalProjectsContainer, .bodyUsefulResourcesContainer{
+	display:flex;
+}
+.bodyPersonalProjectsContainer, .bodyPersonalProjectsHeader, .bodyUsefulResourcesContainer, .bodyUsefulResourcesHeader{
+	margin-top:0.625%;
+}
+.bodyPersonalProjectsHeader, .bodyUsefulResourcesHeader{
+	text-align:center;
+}
+
+/* Footer */
+.footer{
+	text-align:center;
+}
+.footerConnections{
+	margin-top:0.625%;
+}
+
+/* Tooltip */
+.tooltip{
+	position: relative;
+	display: inline-block;
+}
+.tooltipText{
+	position:absolute;
+	visibility:hidden;
+	text-align:center;
+	width:120px;
+	left:-45px;
+	bottom:-50%;
+	background-color:#000000;
+}
+.tooltip:hover .tooltipText{
+  visibility: visible;
+}
