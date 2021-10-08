@@ -31,8 +31,26 @@ LucyferBot is a Java-based Discord bot written with the JDA API.<br>
 - Owner: (BuildEmbed, Delete, Settings, Shutdown)
 - Promotion: (DungeonArchives)
 - Utility (Avatar, Emote, Remind, ServerInfo, WhoIs)</pre>
-<u>Version History (1.2.11):</u>
+<u>Version History (1.2.15):</u>
 <pre>
+1.2.15: SearchTrack
+- Help: Updated documentation
+- PlayerManager: Now supports searching for audio tracks
+- SearchTrack: Searches for an audio track to add to the queue
+- HighOrLow: Clarified "this" variables to the code, changed static fields
+
+1.2.14: Swap
+- Swap: Swaps the position of an audio track in queue with another
+
+1.2.13: PlayNext & AudioScheduler Clarification
+- PlayNext: Brings an audio track to the front of the queue.
+- AudioScheduler: Clarified some variables with "this" keyword and added minor comments throughout code
+
+1.2.12: Alias Clean-up & Uniformity
+- Removed some aliases for several commands due to under-usage and unfitting matches;
+  This overabundance of aliases also caused some overlapping conflicts in intention
+- Changed some text around in help documentation and command descriptions for uniformity
+
 1.2.11: SetPosition & AudioScheduler Update
 - Updated README
 - Moved all player-related functions to AudioScheduler; Methods now only pre-screen and parse the arguments otherwise
