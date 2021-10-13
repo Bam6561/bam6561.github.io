@@ -31,8 +31,19 @@ LucyferBot is a Java-based Discord bot written with the JDA API.<br>
 - Owner: (BuildEmbed, Delete, Settings, Shutdown)
 - Promotion: (DungeonArchives)
 - Utility (Avatar, Emote, Remind, ServerInfo, WhoIs)</pre>
-<u>Version History (1.2.15):</u>
+<u>Version History (1.2.15.3):</u>
 <pre>
+1.2.15.3: Fixed Incorrect Requester Issue
+- Found the root cause of the incorrect requester issue;
+  Was due to mishandling of immediately starting tracks in empty players and not removing the requester,
+  leading to mismatch in size of requester list and queue list
+
+1.2.15.2: Minor revisions
+- Fixed incorrect requester showing after extended usage
+
+1.2.15.1: Update Help Main Menu
+- Fixed new commands not appearing in help main menu; Changed appearance of main menu
+
 1.2.15: SearchTrack
 - Help: Updated documentation
 - PlayerManager: Now supports searching for audio tracks
