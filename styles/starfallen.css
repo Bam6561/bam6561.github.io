@@ -18,7 +18,7 @@ a:hover{
 }
 
 /* Images */
-img:hover{
+.headerContainer img:hover, .footer img:hover{
 	-webkit-border-radius: 100%;
 	-moz-border-radius: 100%;
 	border-radius: 100%;
@@ -53,23 +53,7 @@ img:hover{
 }
 
 /* Body */
-.bodyMainContainer{
-	display:flex;
-	margin-top:0.625%;
-}
-.bodyMainBox, .bodyCurrentProjectsBox, .bodyPersonalProjectsBox, .bodyUsefulResourcesBox{
-	text-align:center;
-	flex:1;
-}
-.bodyCurrentProjectsContainer, .bodyPersonalProjectsContainer, .bodyUsefulResourcesContainer{
-	display:flex;
-}
-.bodyPersonalProjectsContainer, .bodyPersonalProjectsHeader, .bodyUsefulResourcesContainer, .bodyUsefulResourcesHeader{
-	margin-top:0.625%;
-}
-.bodyPersonalProjectsHeader, .bodyUsefulResourcesHeader{
-	text-align:center;
-}
+
 
 /* Footer */
 .footer{

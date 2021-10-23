@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+a {
+  text-decoration: none;
+}
+
+.website {
+  width: 95%;
+  margin: auto;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltipText {
+  visibility: hidden;
+  position: absolute;
+  width: 6.5em;
+  left: -2.1875em;
+  bottom: -60%;
+  border: 1px solid #000000;
+  border-radius: 1em;
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 1rem;
+  color: #123456;
+}
+
+.tooltip:hover .tooltipText {
+  visibility: visible;
+}
+
+/* Header (logo, nav) */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-left:0.5em;
+  padding-right: 0.5em;
+  border-bottom: 4px solid #778899;
+  background-color: #123456;
+  color: #ffffff;
+}
+
+.header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+.header nav li a {
+  padding-left: 0.5em;
+  color: #ffffff;
+}
+
+.header nav li a:hover {
+  text-decoration-line: underline;
+  color: #b7d0df;
+}
+
+/* Intro (portraitContainer, textContainer) */
+.intro {
+  position: relative;
+  display: flex;
+  height: 250px;
+  border-bottom: 4px solid #778899;
+  background-color: #b7d0df;
+}
+
+.intro .topLeftCorner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color:#2B547E;
+}
+
+.intro .bottomRightCorner {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color:#2B547E;
+}
+
+.intro .portraitContainer{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width:50%;
+}
+
+.intro .textContainer{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width:50%;
+}
+
+.intro .text{
+  padding-left: 1em;
+}
+
+.intro .greeting {
+  font-size: 1.5rem;
+}
+
+.intro .greeting strong {
+  font-size: 2rem;
+  color: #123456;
+}
+
+.intro .field{
+  margin-top:0.25em;
+}
+
+.intro .field a {
+  padding: 0.125em 0.5em 0.125em 0.5em;
+  background-color: #123456;
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+
+.intro .field a:hover {
+  background-color: #ffffff;
+  color: #123456;
+}
+
+.intro .bubbles {
+  display: flex;
+  margin-top: 0.75em;
+}
+
+.intro .bubble {
+  width: 0.75em;
+  height: 0.75em;
+  border: 1px solid #123456;
+  border-radius: 100%;
+  background-color: white;
+}
+
+.intro .blank {
+  width: 0.75em;
+  height: 0.75em;
+}
+
+#currentBubble {
+  background-color: #123456;
+}
+
+/* Pitch (textContainer, boxContainer) */
+.pitch {
+  display: flex;
+  height: 275px;
+  border-bottom: 4px solid #778899;
+  background-color: #123456;
+}
+
+.pitch .textContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 32.5%;
+}
+
+.pitch .text {
+  text-align: right;
+  color: #ffffff;
+}
+
+.pitch .slogan {
+  font-size: 1.75rem;
+}
+
+.pitch .slogan b:hover {
+  color: #b7d0df;
+}
+
+.pitch .motto:hover {
+  color: #b7d0df;
+}
+
+.pitch .links {
+  float: right;
+  display: flex;
+  margin: 0.25em;
+}
+
+.pitch .buttons {
+  padding-top: 0.5em;
+  padding-right: 0.5em;
+}
+
+.pitch .button {
+  background-color: #ffffff;
+  padding: 0.5em 0.75em;
+  border-radius: 1em;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #123456;
+}
+
+.pitch .button:hover {
+  background-color: #b7d0df;
+  color: #ffffff;
+}
+
+.pitch .icon {
+  padding-top: 0.3em;
+}
+
+.pitch .boxContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 67.5%;
+}
+
+.pitch .boxes {
+  display: flex;
+  width: 95%;
+  height: 90%;
+}
+
+.pitch .box {
+  width: 25%;
+  padding: 1em;
+  border: 1px solid #778899;
+  border-bottom: 4px solid #778899;
+  background-color: #ffffff;
+  font-size: 0.9rem;
+  color: #2B547E;
+}
+
+.pitch .box:hover {
+  background-color: #2B547E;
+  color: #ffffff;
+}
+
+.pitch .box:hover>.title {
+  color: #ffffff;
+}
+
+.pitch .title {
+  font-weight: bold;
+  color: #123456;
+  font-size: 1rem;
+}
+
+/* Skills (graphicsContainer, captionsContainer)*/
+.skills .graphicsContainer {
+  height: 200px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: #b7d0df;
+}
+
+.skills .graphics {
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+  padding-top: 25px;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+
+.skills .image {
+  width: 15%;
+  border: 1px solid #778899;
+  border-bottom: 4px solid #778899;
+  border-radius: 100%;
+  background-color: #ffffff;
+}
+
+.skills img {
+  width: 75%;
+  height: 75%;
+  padding: 12.5%;
+}
+
+.skills .captionsContainer {
+  display: flex;
+  border-bottom: 4px solid #778899;
+}
+
+.skills .caption {
+  width: 20%;
+  border: 1px solid #778899;
+  background-color: #ffffff;
+  text-align: center;
+  color: #2B547E;
+}
+
+.skills .title {
+  background-color: #123456;
+  color: #ffffff;
+}
+
+/* Projects (symbolContainer, projectContainer)*/
+.projects {
+  display: flex;
+  height: 200px;
+  background-color: #123456;
+  border-bottom: 4px solid #778899;
+}
+
+.projects .symbolContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+}
+
+.projects .symbol {
+  color: #ffffff;
+}
+
+.projects .projectsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+}
+
+.projects .projectsBox {
+  display: flex;
+  justify-content: space-around;
+  width: 97.5%;
+  height: 80%;
+}
+
+.projects .project {
+  display: flex;
+  justify-content: space-between;
+  width: 47.5%;
+}
+
+.projects .icon {
+  width: 35%;
+  border-radius: 100%;
+  border: 1px solid #778899;
+  background-color: #ffffff;
+}
+
+.projects .icon img {
+  height: 90%;
+  width: 90%;
+  padding: 5%;
+}
+
+.projects .textContainer {
+  display: flex;
+  align-items: center;
+  width: 62.5%;
+}
+
+.projects .textBox {
+  height: 62.5%;
+  color: #ffffff;
+}
+
+.projects .title a {
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+
+.projects .title a:hover {
+  color: #b7d0df;
+}
+
+.projects .buttons {
+  padding-top: 0.5em;
+}
+
+.projects .button {
+  padding: 0.25em 0.375em;
+  border-radius: 1em;
+  background-color: #ffffff;
+  font-weight: bold;
+  color: #123456;
+}
+
+.projects .button:hover {
+  background-color: #b7d0df;
+  color: #ffffff;
+}
+
+/* Footer (contactContainer, tooltipContainer)*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  height: 48px;
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: #123456;
+}
+
+.footer .tooltipContainer, .footer .contactContainer {
+  display: flex;
+  align-items: center;
+}
+
+.footer .contact {
+  color: #ffffff;
+}
+
+.footer .contact a {
+  color: #ffffff;
+}
+
+.footer .contact a:hover {
+  color: #b7d0df;
+}
+
+.footer .tooltipBox {
+  float: right;
+}
+
+/*
+Color Schema:
+Dark Blue: #123456
+Moderate Blue: #2B547E
+Sky Blue: #b7d0df
+Slate: #778899
+*/
