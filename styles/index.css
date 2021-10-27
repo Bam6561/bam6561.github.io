@@ -38,7 +38,7 @@ a {
 .header {
   display: flex;
   justify-content: space-between;
-  padding-left:0.5em;
+  padding-left: 0.5em;
   padding-right: 0.5em;
   border-bottom: 4px solid #778899;
   background-color: #123456;
@@ -74,31 +74,31 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  color:#2B547E;
+  color: #2B547E;
 }
 
 .intro .bottomRightCorner {
   position: absolute;
   right: 0;
   bottom: 0;
-  color:#2B547E;
+  color: #2B547E;
 }
 
-.intro .portraitContainer{
+.intro .portraitContainer {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width:50%;
+  width: 50%;
 }
 
-.intro .textContainer{
+.intro .textContainer {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width:50%;
+  width: 50%;
 }
 
-.intro .text{
+.intro .text {
   padding-left: 1em;
 }
 
@@ -111,8 +111,8 @@ a {
   color: #123456;
 }
 
-.intro .field{
-  margin-top:0.25em;
+.intro .field {
+  margin-top: 0.25em;
 }
 
 .intro .field a {
@@ -137,7 +137,7 @@ a {
   height: 0.75em;
   border: 1px solid #123456;
   border-radius: 100%;
-  background-color: white;
+  background-color: #123456;
 }
 
 .intro .blank {
@@ -145,7 +145,11 @@ a {
   height: 0.75em;
 }
 
-#currentBubble {
+#clickableBubble {
+  background-color: #ffffff;
+}
+
+#clickableBubble:hover {
   background-color: #123456;
 }
 
@@ -266,6 +270,9 @@ a {
 }
 
 .skills .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 15%;
   border: 1px solid #778899;
   border-bottom: 4px solid #778899;
@@ -276,7 +283,6 @@ a {
 .skills img {
   width: 75%;
   height: 75%;
-  padding: 12.5%;
 }
 
 .skills .captionsContainer {
@@ -306,14 +312,20 @@ a {
 }
 
 .projects .symbolContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 15%;
 }
 
 .projects .symbol {
-  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.projects .symbol img {
+  height: 90%;
+  width: 90%;
 }
 
 .projects .projectsContainer {
@@ -337,6 +349,9 @@ a {
 }
 
 .projects .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 35%;
   border-radius: 100%;
   border: 1px solid #778899;
@@ -346,7 +361,6 @@ a {
 .projects .icon img {
   height: 90%;
   width: 90%;
-  padding: 5%;
 }
 
 .projects .textContainer {

@@ -34,11 +34,21 @@ a {
   visibility: visible;
 }
 
+.clickable{
+  height:100%;
+  width:100%;
+}
+
+
+.clickable:hover, .clickableRound:hover{
+  border:5px solid #ffffff;
+}
+
 /* Header (logo, nav) */
 .header {
   display: flex;
   justify-content: space-between;
-  padding-left:0.5em;
+  padding-left: 0.5em;
   padding-right: 0.5em;
   border-bottom: 4px solid #778899;
   background-color: #123456;
@@ -74,31 +84,31 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  color:#2B547E;
+  color: #2B547E;
 }
 
 .intro .bottomRightCorner {
   position: absolute;
   right: 0;
   bottom: 0;
-  color:#2B547E;
+  color: #2B547E;
 }
 
-.intro .portraitContainer{
+.intro .portraitContainer {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width:50%;
+  width: 50%;
 }
 
-.intro .textContainer{
+.intro .textContainer {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width:50%;
+  width: 50%;
 }
 
-.intro .text{
+.intro .text {
   padding-left: 1em;
 }
 
@@ -111,8 +121,8 @@ a {
   color: #123456;
 }
 
-.intro .field{
-  margin-top:0.25em;
+.intro .field {
+  margin-top: 0.25em;
 }
 
 .intro .field a {
@@ -137,7 +147,7 @@ a {
   height: 0.75em;
   border: 1px solid #123456;
   border-radius: 100%;
-  background-color: white;
+  background-color: #123456;
 }
 
 .intro .blank {
@@ -145,8 +155,145 @@ a {
   height: 0.75em;
 }
 
-#currentBubble {
+#clickableBubble {
+  background-color: #ffffff;
+}
+
+#clickableBubble:hover {
   background-color: #123456;
+}
+
+/* Art (upperDisplayContainer, lowerDisplayContainer)*/
+.art .upperDisplayContainer {
+  display: flex;
+  height: 300px;
+  border-bottom: 4px solid #778899;
+  background-color: #123456;
+}
+
+.art .symbolContainer {
+  height: 100%;
+  width: 25%;
+}
+
+.art .symbol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+}
+
+.art .symbol img {
+  height: 90%;
+  width: 90%;
+}
+
+.art .bannerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+}
+
+.art .banner {
+  height: 90%;
+  width: 90%;
+  background-image: url("https://i.ibb.co/NtksWj1/Holo-Fusions-Banner.jpg");
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+.art .lowerDisplayContainer {
+  display: flex;
+  justify-content: space-around;
+  height: 500px;
+  border-bottom: 4px solid #778899;
+  background-color: #b7d0df;
+}
+
+.art .featureContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 25%;
+}
+
+.art .feature {
+  height: 90%;
+  width: 90%;
+  background-image: url("https://i.ibb.co/dM0Pjph/elena-Coffee.jpg");
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+.art .showcaseContainer {
+  height: 100%;
+  width: 60%;
+}
+
+.art .showcaseBox {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  height: 50%;
+  width: 75%;
+}
+
+.art .itemContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 90%;
+}
+
+.art .item, .art .cornerItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  border: 5px solid #778899;
+  border-radius: 100%;
+  background-color: #ffffff;
+}
+
+.art .item img {
+  height: 85%;
+  width: 85%;
+}
+
+.art .cornerItem img {
+  height: 65%;
+  width: 65%;
+}
+
+.art .item:hover, .art .cornerItem:hover {
+  border: 5px solid #ffffff;
+}
+
+
+.art .connectionsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 7.5%;
+}
+
+.art .connectionsBox {
+  padding:0.5em;
+  background-color:#123456;
+  text-align:center;
+}
+
+.art .connectionsBox a{
+  color:#ffffff;
+}
+
+.art .connectionsBox a:hover{
+  color:#b7d0df;
 }
 
 /* Footer (contactContainer, tooltipContainer)*/
